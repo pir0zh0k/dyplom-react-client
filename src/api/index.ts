@@ -3,7 +3,7 @@ import axios from "axios";
 const token = localStorage.getItem("token");
 
 export const $withToken = axios.create({
-  baseURL: "https://dyplom-backend-mmcb.onrender.com/api/v1",
+  baseURL: "http://localhost:4200/api/v1",
   withCredentials: true,
   headers: {
     Authorization: token !== null ? `Bearer ${token}` : null,
@@ -11,5 +11,5 @@ export const $withToken = axios.create({
 });
 
 export const $withoutToken = axios.create({
-  baseURL: "https://dyplom-backend-mmcb.onrender.com/api/v1",
+  baseURL: "http://localhost:4200/api/v1",
 });

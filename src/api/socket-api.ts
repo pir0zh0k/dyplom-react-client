@@ -4,7 +4,7 @@ export class SocketApi {
   static socket: null | Socket = null;
 
   static createConnection(chatId: string) {
-    this.socket = io("https://dyplom-backend-mmcb.onrender.com", {
+    this.socket = io("http://localhost:4200/", {
       query: { chatId },
     });
 

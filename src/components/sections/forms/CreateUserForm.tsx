@@ -74,7 +74,7 @@ export const CreateUserForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-5 flex flex-col md:w-1/3 border p-5 rounded-lg"
+        className="space-y-5 flex flex-col border p-5 rounded-lg"
       >
         <h1 className="text-center text-3xl font-semibold">
           Создание пользователя
